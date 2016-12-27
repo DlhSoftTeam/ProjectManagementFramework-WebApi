@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>GanttChartExporter sample</title>
+    <link rel="stylesheet" href="app.css" type="text/css"/>
+    <script src="Scripts/DlhSoft.ProjectData.GanttChart.HTML.Controls.js"></script>
+    <script src="Scripts/DlhSoft.ProjectData.GanttChart.HTML.Controls.Extras.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <h1>GanttChartExporter sample</h1>
+    <div id="ganttChartView"></div>
+    <!-- Use http://localhost:62534/GanttChartExporter.aspx to submit form to and directly show PNG image output into the browser. -->
+    <form action="http://localhost:62534/GanttChartExporter.aspx" method="post" target="_blank" onsubmit="initializeGanttChartExporterInput()">
+        <input id="projectXmlInput" name="ProjectXml" type="hidden" />
+        <input value="Export image" type="submit" />
+    </form>
+</body>
+</html>
